@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", system-ui, sans-serif;
+
+  /* Custom Colors from Elegant Dark theme specification */
+  --color-surface: #0d0d0e;
+  --color-surface-dim: #0a0a0b;
+  --color-surface-bright: #1c1c1f;
+  --color-surface-container-lowest: #1a1a1d;
+  --color-surface-container-low: #141416;
+  --color-surface-container: #161619;
+  --color-surface-container-high: #212124;
+  --color-surface-container-highest: #2c2c31;
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #94a3b8;
+  --color-inverse-surface: #f2f1ec;
+  --color-inverse-on-surface: #1b1c19;
+  --color-outline: rgba(255, 255, 255, 0.15);
+  --color-outline-variant: rgba(255, 255, 255, 0.08);
+  --color-surface-tint: #818cf8;
+
+  --color-primary: #818cf8;
+  --color-on-primary: #0d0d0e;
+  --color-primary-container: rgba(129, 140, 248, 0.15);
+  --color-on-primary-container: #e2e8f0;
+  --color-inverse-primary: #ffb4ab;
+
+  --color-secondary: #c084fc;
+  --color-on-secondary: #0d0d0e;
+  --color-secondary-container: rgba(192, 132, 252, 0.15);
+  --color-on-secondary-container: #e2e8f0;
+
+  --color-tertiary: #34d399;
+  --color-on-tertiary: #0d0d0e;
+  --color-tertiary-container: rgba(52, 211, 153, 0.15);
+  --color-on-tertiary-container: #34d399;
+
+  --color-error: #f87171;
+  --color-on-error: #0d0d0e;
+  --color-error-container: rgba(248, 113, 113, 0.15);
+  --color-on-error-container: #f87171;
+
+  --color-primary-fixed: rgba(129, 140, 248, 0.2);
+  --color-primary-fixed-dim: rgba(129, 140, 248, 0.1);
+  --color-on-primary-fixed: #818cf8;
+  --color-on-primary-fixed-variant: #e2e8f0;
+
+  --color-secondary-fixed: rgba(192, 132, 252, 0.2);
+  --color-secondary-fixed-dim: rgba(192, 132, 252, 0.1);
+  --color-on-secondary-fixed: #c084fc;
+  --color-on-secondary-fixed-variant: #e2e8f0;
+
+  --color-tertiary-fixed: rgba(52, 211, 153, 0.2);
+  --color-tertiary-fixed-dim: rgba(52, 211, 153, 0.1);
+  --color-on-tertiary-fixed: #34d399;
+  --color-on-tertiary-fixed-variant: #e2e8f0;
+
+  --color-background: #0d0d0e;
+  --color-on-background: #e2e8f0;
+  --color-surface-variant: #161619;
+}
+
+/* Scrollbar behaviors */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Font styles mapped to user spec */
+.font-display-lg {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+}
+
+.font-headline-lg {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.font-headline-lg-mobile {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.font-headline-md {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.font-title-lg {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.font-body-lg {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-body-md {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.font-label-lg {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+
+.font-label-sm {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 20px);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Handi Heritage Restaurant",
+  "description": "Authentic Handi cooking, saffron biryanis, and North Indian delicacies delivered at your doorstep with active step tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
